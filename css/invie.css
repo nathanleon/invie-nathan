@@ -333,6 +333,7 @@ input:focus, textarea:focus {
 	display: inline-block;
 	text-align: center;
 	position: absolute;
+	color: white;
 	left: 20px;
 	top: 20px;
 	z-index: 3;
@@ -348,7 +349,10 @@ input:focus, textarea:focus {
 	max-width: 800px;
 }*/
 
-
+/*precios*/
+	.tabla  .contenedor {  /*para que la table no rompa la vista de la pagina*/
+		overflow: auto;
+	}
 	/*Portada*/
 	.titulo {
 		font-size: 45px;
@@ -495,6 +499,13 @@ input:focus, textarea:focus {
 		position: static;
 	}
 
+	.header {
+		position: static;
+	}
+
+	.header .contenedor {
+		position: static;
+	}
 
 	.menu ul {
 		flex: 1;

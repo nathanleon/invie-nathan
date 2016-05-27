@@ -5,6 +5,7 @@
 		<title>Precios de tus mejores guitarras!!</title>
 		<link rel="stylesheet" type="text/css" href="css/invie.css">
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	</head>
 
 	<body>
@@ -13,7 +14,8 @@
 			<figure class="logotipo"><!--logotipo-->
 				<img src="images/invie.png" width="186" height="60" alt="Invie Logotipo"/>
 			</figure>
-			<nav class="menu"> <!--menu-->
+				<span class="burger-button icon-menu"  id="burger-button"></span>
+			<nav class="menu" id="menu"> <!--menu-->
 				<ul>
 					<li>
 						<a href="index.html">home</a>
@@ -27,13 +29,15 @@
 				</ul>
 			</nav>	
 		</div>
-			
 		</header>
 		<section class="tabla">
 		<div class="contenedor">
 			<table>
 				<thead>
 					<tr>
+						<th>Modelo</th>
+						<th>Precio</th>
+						<th>Descripción</th>
 						<th>Modelo</th>
 						<th>Precio</th>
 						<th>Descripción</th>
@@ -44,13 +48,22 @@
 						<td>Invie classic</td>
 						<td>$100000</td>
 						<td>Una guitarra pro</td>
-					</tr>
-					<tr>
 						<td>Invie classic</td>
 						<td>$100000</td>
 						<td>Una guitarra pro</td>
 					</tr>
 					<tr>
+						<td>Invie classic</td>
+						<td>$100000</td>
+						<td>Una guitarra pro</td>
+						<td>Invie classic</td>
+						<td>$100000</td>
+						<td>Una guitarra pro</td>
+					</tr>
+					<tr>
+						<td>Invie classic</td>
+						<td>$100000</td>
+						<td>Una guitarra pro</td>
 						<td>Invie classic</td>
 						<td>$100000</td>
 						<td>Una guitarra pro</td>
@@ -104,6 +117,35 @@
 			</form>
 		</div>
 		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
+		<script>
+			var consulta = window.matchMedia('(max-width:500px)');
+			consulta.addListener(mediaQuery);
 
+			var $burgerButton = document.getElementById('burger-button');
+			var $menu = document.getElementById('menu');
+			
+			
+			function toggleMenu(){
+				$menu.classList.toggle('active')
+			};
+
+			function mediaQuery(){
+
+					if (consulta.matches) {
+							console.log('si se cumplio la condicion');
+							$burgerButton.addEventListener('touchstart', toggleMenu);
+										  }else{
+												console.log('no se cumplio la condicon');
+												$burgerButton.removeEventListener('touchstart', toggleMenu);
+												}
+
+			}
+			mediaQuery();
+
+			var blazy = new Blazy ({
+						selector: 'img'
+			})
+		</script>
 	</body>
 	</html>
