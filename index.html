@@ -109,6 +109,7 @@
 			</form>
 		</div>
 		</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
 		<script>
 			var consulta = window.matchMedia('(max-width:500px)');
@@ -119,8 +120,17 @@
 			
 			
 			function toggleMenu(){
-				$menu.classList.toggle('active')
+				$menu.classList.toggle('active');
 			};
+
+			function showMenu(){
+			$menu.classList.add('active');
+			};
+
+			function hideMenu(){
+			$menu.classList.remove('active');
+			};
+
 
 			function mediaQuery(){
 
@@ -138,6 +148,12 @@
 			var blazy = new Blazy ({
 						selector: 'img'
 			})
+
+			//gestos hammer.js
+			var body = document.body;
+			var gestos = new Hammer(body);
+				gestos.on('swipeleft', hideMenu);
+				gestos.on('swiperight', showMenu);
 		</script>
 	</body>
 </html>
