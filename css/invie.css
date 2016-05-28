@@ -213,6 +213,11 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); */
 }
 
+.video-demo{
+	max-width: 500px;
+	margin: 0 auto 80px auto;
+	border: 3px solid grey;
+	}
 
 .footer {
 	background: #273b47;
@@ -443,7 +448,13 @@ input:focus, textarea:focus {
 	.menu ul{
 		padding: 0;
 	}
-	
+
+	.video-demo {
+		margin-bottom: 50px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
 
 @media screen and (max-width: 767px){
 	.footer .contenedor {
@@ -561,6 +572,9 @@ input:focus, textarea:focus {
 		height: auto;
 	}
 
+	.video-demo	{
+		margin: 0 10px 35px 10px;
+	}
 	.title-b {
 		font-size: 30px;
 	}	
