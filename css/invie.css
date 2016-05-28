@@ -291,7 +291,7 @@ body {
 /*estilo de tabla*/
 table {
 	width: 100%;
-	margin: 50px 0;
+	
 }
 
 th {
@@ -345,7 +345,9 @@ input:focus, textarea:focus {
 	display: none;
 }
 
-
+.precios .background {
+	padding: 20px;
+}
 
 
 /*-------------media queries---------------*/
@@ -427,6 +429,8 @@ input:focus, textarea:focus {
 
 
 @media screen and (max-width: 650px){
+
+	
 	.header{
 		text-align: center;
 	}
@@ -493,6 +497,7 @@ input:focus, textarea:focus {
 	textarea {
 		width: 100%;
 	}
+
 }
 
 
