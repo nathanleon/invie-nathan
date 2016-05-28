@@ -349,6 +349,9 @@ input:focus, textarea:focus {
 	padding: 20px;
 }
 
+	.tabla {
+		margin: 50px 20px;
+	}
 
 /*-------------media queries---------------*/
 /*Para pantalla de tabletas*/
@@ -364,9 +367,7 @@ input:focus, textarea:focus {
 
 /*precios*/
 
-	.tabla {
-		margin: 50px 20px;
-	}
+
 	.tabla  .contenedor {  /*para que la table no rompa la vista de la pagina*/
 		overflow: auto;
 		border: 1px solid grey;
