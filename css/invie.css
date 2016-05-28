@@ -579,6 +579,10 @@ input:focus, textarea:focus {
 		font-size: 30px;
 	}	
 
+	.precios .header .logotipo {
+		margin: 50px 0;
+	}
+
 }
 
 
